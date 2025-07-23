@@ -1,0 +1,135 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  background: aquamarine;
+  margin: 10px;
+}
+
+body {
+  font-family: "Pacifico", cursive;
+  background: #2d2d2d;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* For Navigation Bar */
+
+#nav-bar {
+  width: 96vw;
+  background: #4b4b4b;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.nav-bar-content {
+  position: sticky;
+  top: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active,
+a:visited {
+  color: white;
+}
+
+.c {
+  clear: both;
+}
+
+.nav1 {
+  float: left;
+}
+
+.nav2 {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  column-gap: 30px;
+}
+
+/* For Main */
+
+#home{
+  /* background: skyblue; */
+  display: flex;
+  flex-direction: row;
+  margin: 100px 40px;
+  height: 70vh;
+}
+
+.home-container{
+  justify-content: center;
+}
+
+.greeting{
+  font-size: 100px;
+  color: #d3d3d3;
+  transform: translate(170px);
+}
+
+.home-container .short-intro{
+  font-size: 15px;
+  color: #d3d3d3;
+  text-align: center;
+  transform: translate(150px, 30px);
+}
+
+/* For Button */
+
+.my-work-btn{
+  padding: 10px;
+  width: 100px;
+  transform: translate(500px, 90px);
+  color: gray;
+  background: #d2d2d2;
+  border-radius: 5px;
+  border: none;
+}
+
+/* For Image Cards */
+
+.card-container{
+  float: right;
+  transform: translate(400px);
+}
+
+.first{
+  /* background: skyblue; */
+  transform: translate(200px, -40px);
+}
+
+.first img{
+  height: 400px; 
+  width: 300px;
+}
+
+.second{
+  /* background: red; */
+  transform: translate(50px, -110px) rotate(12deg);
+}
+
+.second img{
+  height: 100px;
+  width: 80px;
+}
+
+.third{
+  /* background: blue; */
+  transform: translate(110px, -320px) rotate(-15deg);  
+}
+
+.third img{
+  height: 150px;
+  width: 115px;
+}

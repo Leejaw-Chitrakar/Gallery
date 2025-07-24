@@ -3,12 +3,12 @@
   margin: 0px;
 }
 
-.box {
+/* .box {
   height: 100px;
   width: 100px;
   background: aquamarine;
   margin: 10px;
-}
+} */
 
 body {
   font-family: "Pacifico", cursive;
@@ -99,37 +99,65 @@ a:visited {
 
 /* For Image Cards */
 
-.card-container{
+.home-card-container{
   float: right;
   transform: translate(400px);
 }
 
-.first{
+.h-first{
   /* background: skyblue; */
   transform: translate(200px, -40px);
 }
 
-.first img{
+.h-first img{
   height: 400px; 
   width: 300px;
 }
 
-.second{
+.h-second{
   /* background: red; */
   transform: translate(50px, -110px) rotate(12deg);
 }
 
-.second img{
+.h-second img{
   height: 100px;
   width: 80px;
 }
 
-.third{
+.h-third{
   /* background: blue; */
   transform: translate(110px, -320px) rotate(-15deg);  
 }
 
-.third img{
+.h-third img{
   height: 150px;
   width: 115px;
+}
+
+/* Collections */
+
+#collection{
+  height: 100vh;
+  color: white;
+}
+
+#collection p{
+  text-align: center;
+  font-size: 40px;
+}
+
+#collection .collection-container p{
+  font-size: 20px;
+}
+
+.collection-card-container{
+  display: flex;
+  justify-content: center;
+}
+
+.c-card img{
+  border: 5px #4b4b4b double;
+  margin: 25px 80px;
+  height: 450px;
+  width: auto;
 }

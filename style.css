@@ -186,9 +186,33 @@ a:visited {
 }
 
 .c-card:hover {
-  box-shadow: 5px 5px 15px #b9b9b9;
+  /* box-shadow: 5px 5px 15px #b9b9b9; */
+  animation: 5s borderlight infinite;
 }
 
 .c-card:hover #dis {
   bottom: 0px;
+}
+
+/* Animations */
+
+@keyframes borderlight{
+  0%{
+    box-shadow: 5px 5px 50px red;
+  }
+  25%{
+    box-shadow: 5px 5px 50px blue;
+  }
+  50%{
+    box-shadow: 5px 5px 50px green;
+
+  }
+  75%{
+    box-shadow: 5px 5px 50px yellow;
+    
+  }
+  100%{
+    box-shadow: 5px 5px 50px gray;
+
+  }
 }

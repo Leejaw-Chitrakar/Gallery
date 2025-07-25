@@ -60,7 +60,7 @@ a:visited {
 
 /* For Main */
 
-#home{
+#home {
   /* background: skyblue; */
   display: flex;
   flex-direction: row;
@@ -68,17 +68,17 @@ a:visited {
   height: 70vh;
 }
 
-.home-container{
+.home-container {
   justify-content: center;
 }
 
-.greeting{
+.greeting {
   font-size: 100px;
   color: #d3d3d3;
   transform: translate(170px);
 }
 
-.home-container .short-intro{
+.home-container .short-intro {
   font-size: 15px;
   color: #d3d3d3;
   text-align: center;
@@ -87,7 +87,7 @@ a:visited {
 
 /* For Button */
 
-.my-work-btn{
+.my-work-btn {
   padding: 10px;
   width: 100px;
   transform: translate(500px, 90px);
@@ -99,65 +99,70 @@ a:visited {
 
 /* For Image Cards */
 
-.home-card-container{
+.home-card-container {
   float: right;
   transform: translate(400px);
 }
 
-.h-first{
+.h-first {
   /* background: skyblue; */
   transform: translate(200px, -40px);
 }
 
-.h-first img{
-  height: 400px; 
+.h-first img {
+  height: 400px;
   width: 300px;
 }
 
-.h-second{
-  /* background: red; */
+.h-second {
   transform: translate(50px, -110px) rotate(12deg);
 }
 
-.h-second img{
+.h-second img {
   height: 100px;
   width: 80px;
 }
 
-.h-third{
-  /* background: blue; */
-  transform: translate(110px, -320px) rotate(-15deg);  
+.h-third {
+  transform: translate(110px, -320px) rotate(-15deg);
 }
 
-.h-third img{
+.h-third img {
   height: 150px;
   width: 115px;
 }
 
 /* Collections */
 
-#collection{
+#collection {
   height: 100vh;
   color: white;
 }
 
-#collection p{
+#collection p {
   text-align: center;
   font-size: 40px;
 }
 
-#collection .collection-container p{
-  font-size: 20px;
-}
-
-.collection-card-container{
-  display: flex;
+.collection-card-container {
   justify-content: center;
+  display: flex;
+  padding: 40px;
+  gap: 50px;
 }
 
-.c-card img{
-  border: 5px #4b4b4b double;
-  margin: 25px 80px;
-  height: 450px;
-  width: auto;
+.c-card {
+  height: 400px;
+  width: 300px;
+  background: #000;
+  border-radius: 20px;
+  border: 2px solid #a0a0a0;
+  overflow: hidden;
+  position: relative;
+}
+
+.c-card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }

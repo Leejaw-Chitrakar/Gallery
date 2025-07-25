@@ -172,6 +172,23 @@ a:visited {
   gap: 50px;
 }
 
+#dis p {
+  font-size: 20px;
+}
+
+#dis {
+  position: absolute;
+  bottom: -90px;
+  background: rgba(0, 0, 0, 0.617);
+  /* left: 10%; */
+  padding: 5px 10px;
+  transition: all ease-in-out 1s;
+}
+
 .c-card:hover {
   box-shadow: 5px 5px 15px #b9b9b9;
+}
+
+.c-card:hover #dis {
+  bottom: 0px;
 }

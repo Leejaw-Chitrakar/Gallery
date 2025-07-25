@@ -144,12 +144,7 @@ a:visited {
   font-size: 40px;
 }
 
-.collection-card-container {
-  justify-content: center;
-  display: flex;
-  padding: 40px;
-  gap: 50px;
-}
+/* For Cards */
 
 .c-card {
   height: 400px;
@@ -159,10 +154,24 @@ a:visited {
   border: 2px solid #a0a0a0;
   overflow: hidden;
   position: relative;
+  transition: all ease-in-out 0.5s;
 }
 
 .c-card img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.first-row,
+.second-row,
+.third-row {
+  justify-content: center;
+  display: flex;
+  padding: 40px;
+  gap: 50px;
+}
+
+.c-card:hover {
+  box-shadow: 5px 5px 15px #b9b9b9;
 }

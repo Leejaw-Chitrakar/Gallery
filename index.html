@@ -7,6 +7,7 @@
     <title>Photo Gallery</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style></style>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
                 <div class="nav2">
                     <h3><a href="#collection">Collection</a></h3>
                     <h3><a href="#contact">Contact</a></h3>
-                    <h3><a href="#about">About</a></h3>
+                    <h3><a onclick="about()">About</a></h3>
                 </div>
             </div>
         </div>
@@ -50,6 +51,31 @@
             </div>
         </div>
 
+        <div id="about">
+            <div class="about-container">
+                <div class="about-content">
+                    <div>
+                    <h1>About My Photo Gallery</h1>
+                </div>
+                <div>
+                    <h2>Capturing Moments, Sharing Stories</h2>
+                    <p>
+                        Welcome to my passion project! This gallery is a curated collection of moments captured through my lens.
+                        From breathtaking landscapes to vibrant cityscapes, each image tells a unique story.
+                    </p>
+                    <p>
+                        My journey into photography began with a simple desire to preserve the beauty I encountered daily. Over time, it evolved into a way of seeing the world differently, finding art in the ordinary, and sharing those perspectives with others. I hope these photos inspire you and bring a little joy to your day.
+                    </p>
+                    <p>
+                        For inquiries or collaborations, please visit the <a href="#" class="text-decoration-none">Contact Us</a> page.
+                    </p>
+                </div>
+                <div>
+                    <button onclick="about()">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
 
         <div id="collection">
             <p>Collections</p>
@@ -165,7 +191,7 @@
                                 </div>
                             </div>
                             <hr>
-                        </div>
+                        </div>`
                     </div>
                 </div>
                 <div class="social-media">
@@ -182,10 +208,29 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <div >
+            <p>&copy; 2025 My Photo Gallery. All rights reserved.</p>
+        </div>
+    </footer>
     <script>
         function btn() {
             document.getElementById('collection').scrollIntoView({ behavior: 'smooth' });
         }
+
+        function about() {
+            const aboutSection = document.getElementById('about');
+            if(aboutSection.style.display != 'flex'){
+                aboutSection.style.display = 'flex';
+                console.log('showing');
+            }
+            else{
+                aboutSection.style.display = 'none';
+                console.log('hidden');
+            }
+        }
+
     </script>
 </body>
 

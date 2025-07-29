@@ -171,9 +171,21 @@ a:visited {
 
 .about-content{
   justify-items: center;
-
+  text-align: justify;
 }
 
+.about-content button{
+  background: #a6a6a6;
+  border: none;
+  border-radius: 10px;
+  height: 20px;
+  width: 50px;
+  margin: 40px 0px 0px;
+}
+
+.info { 
+  justify-items: center;
+}
 
 /* For Cards */
 

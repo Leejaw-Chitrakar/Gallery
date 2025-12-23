@@ -146,7 +146,7 @@ a:visited {
 
 /* For About */
 
-#about{
+#about {
   height: 100vh;
   background: #8d8d8d;
   display: none;
@@ -155,7 +155,7 @@ a:visited {
   position: relative;
 }
 
-.about-container{
+.about-container {
   background: #4b4b4b;
   height: 400px;
   width: 650px;
@@ -169,12 +169,12 @@ a:visited {
   align-items: center;
 }
 
-.about-content{
+.about-content {
   justify-items: center;
   text-align: justify;
 }
 
-.about-content button{
+.about-content button {
   background: #a6a6a6;
   border: none;
   border-radius: 10px;
@@ -183,7 +183,7 @@ a:visited {
   margin: 40px 0px 0px;
 }
 
-.info { 
+.info {
   justify-items: center;
 }
 
@@ -197,13 +197,15 @@ a:visited {
   border: 2px solid #a0a0a0;
   overflow: hidden;
   position: relative;
-  transition: all ease-in-out 0.5s;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth eased transition */
+  cursor: pointer;
 }
 
 .c-card img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
 .first-row,
@@ -221,15 +223,22 @@ a:visited {
 
 #dis {
   position: absolute;
-  bottom: -90px;
-  background: rgba(0, 0, 0, 0.617);
-  padding: 5px 10px;
-  transition: all ease-in-out 1s;
+  bottom: -150px; /* Hide further down initially */
+  background: rgba(0, 0, 0, 0.7); /* Darker, better contrast */
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding doesn't overflow width */
+  transition: bottom 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .c-card:hover {
-  /* box-shadow: 5px 5px 15px #b9b9b9; */
+  transform: translateY(-10px) scale(1.02); /* Lift and slight scale */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Deep shadow for depth */
   animation: 5s borderlight infinite;
+}
+
+.c-card:hover img {
+  transform: scale(1.1); /* Zoom image */
 }
 
 .c-card:hover #dis {
@@ -337,7 +346,7 @@ a:visited {
 
 /* Icons for Social Media */
 
-.fb{
+.fb {
   position: absolute;
   top: 20%;
   left: 5%;
@@ -353,7 +362,7 @@ a:visited {
   cursor: pointer;
 }
 
-.insta{
+.insta {
   position: absolute;
   top: 20%;
   left: 40%;
@@ -369,7 +378,7 @@ a:visited {
   cursor: pointer;
 }
 
-.gmail{
+.gmail {
   position: absolute;
   top: 20%;
   left: 75%;
@@ -384,8 +393,6 @@ a:visited {
   background: rgb(8, 106, 198);
   cursor: pointer;
 }
-
-
 
 /* Animations */
 
